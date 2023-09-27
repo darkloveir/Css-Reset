@@ -1,0 +1,168 @@
+/*!
+ * @darkloveir/reset.css v1.0.0
+ * A tiny modern CSS reset.
+ * 
+ * Copyright (c) 2023 
+ * 
+ * Licensed under the MIT license.
+ */
+
+@charset "utf-8";
+
+/* Box sizing */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* Font and Word setting */
+html {
+    font-family: Arial, Helvetica, Garuda, Jamrul, FreeSans, sans-serif;
+    word-break: normal;
+}
+
+/* General elements */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* List */
+ul>li {
+    list-style: none;
+}
+
+ol>li {
+    list-style: none;
+}
+
+/* A */
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Input */
+a,
+button,
+input[type='submit'],
+input[type='button'],
+input[type='reset'] {
+    border: none;
+    color: unset;
+    background: transparent;
+    cursor: pointer
+}
+
+/* Form */
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    border: none;
+}
+
+/* Media */
+embed,
+iframe,
+object,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+audio {
+    max-width: 100%;
+}
+
+/* Iframe */
+iframe {
+    border: none;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-delay: 0.1ms !important;
+        animation-duration: 0.1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-delay: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        opacity: 1;
+    }
+}
